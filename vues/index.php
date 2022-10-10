@@ -3,7 +3,7 @@ require_once "navbar.php";
 
 $session = curl_init();
 
-curl_setopt($session, CURLOPT_URL, "https://api.airtable.com/v0/appvQG97bedW0go4Z/Categorie");
+curl_setopt($session, CURLOPT_URL, "https://api.airtable.com/v0/appaIyKt419Or5Axf/Categorie");
 curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
 
 $auth = "Authorization: Bearer keyUy6gh4qzzh4OLo";

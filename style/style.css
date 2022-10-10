@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+section{
+    display: flex;
+    gap: 50px;
+}
+
+.cat_card{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 200px;
+    border: #262626 solid 2px ;
+    border-radius: 20px;
+    background-color: #262626;
+    box-shadow:  5px 5px 12px #7d7d7d,
+               -5px -5px 12px #ffffff;
+}
+
+.jeu_img{
+    height: 100%;
+    background: url("../images/img.jpg");
+    background-size:cover ;
+    background-position: center center;
+    border-radius: 18px 18px 0 0 ;
+}
+
+.cat_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    color: #f5f5f5;
+    margin-top: 10px;
+    margin-bottom   : 10px;
+}
+
+
+

@@ -20,13 +20,13 @@ $listeCategories = $objetCategorie->listeCategories();
     <link rel="stylesheet" href="../style/style.css">
 </head>
 
-<div class="container-fluid">
-    <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-3 px-0 pt-2 bg-dark">
+<main class="container-fluid">
+    <div class="row flex-nowrap altmain">
+        <div id="navbar" class="col-auto col-md-3 col-xl-2 px-0 pt-2 bg-dark">
             <!-- align-items-sm-start -->
             <div class="sidebar text-white min-vh-100">
 
-                <a href="index.php" class="divLogo text-white text-decoration-none">
+                <a href="index.php" class="divLogo text-white text-decoration-none mx-sm-3">
                     <img src="../images/logo50x50.png" class="logo40x40" alt="">
                     <span class="titrePerso">STEMA</span>
                 </a>
@@ -35,19 +35,19 @@ $listeCategories = $objetCategorie->listeCategories();
 
                 <!-- align-items-sm-start -->
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-sm-start align-items-center pt-2" id="menu">
-                    <li class="nav-item redHover">
+                    <li class="nav-item">
                         <a href="mesJeux.php" class="nav-link align-middle px-0"><span class="h2Perso ms-1">Mes jeux</span></a>
                     </li>
 
-                    <div class="accordion accordion-flush py-4" id="accordionFlushExample">
+                    <li class="accordion accordion-flush py-1" id="accordionFlushExample">
                         <div class="accordion-item bg-dark">
                             <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button bg-dark h2Perso text-white px-0 py-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <button class="accordion-button bg-dark h2Perso text-white px-0 py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                     <a href="listeCategories.php" class="text-decoration-none h2Perso redHover"><span class="h2Perso ms-1">Catégories</span></a>
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body pt-0">
+                                <ul class="accordion-body pt-0">
                                     <?php
                                     $listeCategorie = $objetCategorie->listeCategories();
                                     foreach ($listeCategories->{'records'} as $categorie) {
@@ -58,11 +58,11 @@ $listeCategories = $objetCategorie->listeCategories();
                                     <?php
                                     }
                                     ?>
-                                </div>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <li>
+                    </li>
+                    <li class="nav-item">
                         <a href="#" class="nav-link px-0 align-middle redHover">
                             <span class="h2Perso ms-1">Contacts</span></a>
                     </li>
@@ -70,6 +70,3 @@ $listeCategories = $objetCategorie->listeCategories();
                 <hr>
             </div>
         </div>
-        <div class="col py-3">
-
-    </div>

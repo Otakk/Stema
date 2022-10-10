@@ -4,17 +4,19 @@
     $instance = new Jeux();
 ?>
 
-    <main>
+        <div class = 'container'>
 
-        <h1>Categorie -> Jeux</h1>
+            <h1>Categorie -> Jeux</h1>
 
-        <section>
+            <section>
 
-            <?php $instance->UniqueCat(); ?>
+                <?php $instance->UniqueCat(); ?>
 
-        </section>
+            </section>
 
-    </main>
+        </div>
+    </div>
+</main>
 
 
 </body>

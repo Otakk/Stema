@@ -37,7 +37,7 @@ $listeCategories = $objetCategorie->listeCategories();
                 <!-- align-items-sm-start -->
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-sm-start align-items-center pt-2" id="menu">
                     <li class="nav-item">
-                        <a href="mesJeux.php" class="nav-link align-middle px-0"><span class="h2Perso ms-1">Mes jeux</span></a>
+                        <a href="jeux.tpl.php" class="nav-link align-middle px-0"><span class="h2Perso ms-1">Mes jeux</span></a>
                     </li>
 
                     <li class="accordion accordion-flush py-1" id="accordionFlushExample">

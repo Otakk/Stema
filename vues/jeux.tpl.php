@@ -6,7 +6,7 @@
 
         <div class = 'container'>
 
-            <h1>Categorie -> Jeux</h1>
+            <h1>Mes jeux</h1>
 
             <section>
 

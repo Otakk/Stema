@@ -2,11 +2,6 @@
 
 class Categories {
     
-    public function __construct()
-    {
-        
-    }
-
     public function initRequete($link){
         $session = curl_init();
         curl_setopt($session, CURLOPT_URL, $link);

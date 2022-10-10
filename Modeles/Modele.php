@@ -1,5 +1,5 @@
 <?php 
 
-require_once "ListeCategories.php";
+require_once "../Modeles/ListeCategories.php";
 
 ?>

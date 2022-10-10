@@ -14,8 +14,8 @@ curl_close($session);
 
 $array = json_decode($resultat);
 
-var_dump($array);
+// var_dump($array);
 
-foreach($array->{'records'} as $value) {
-    echo '<p>' . ($value->{'fields'}->{'Name'} . '</p>');
-}
+// foreach($array->{'records'} as $value) {
+//     echo '<p>' . ($value->{'fields'}->{'Name'} . '</p>');
+// }

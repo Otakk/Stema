@@ -59,6 +59,4 @@ $listeCategories = $objetCategorie->listeCategories();
         </div>
         <div class="col py-3">
 
-        </div>
     </div>
-</div>

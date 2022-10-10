@@ -18,6 +18,7 @@ $listeCategories = $objetCategorie->listeCategories();
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/listeCategorie.css">
 </head>
 
 <div class="container-fluid">
@@ -25,7 +26,7 @@ $listeCategories = $objetCategorie->listeCategories();
         <div class="col-auto col-md-3 col-xl-2 px-sm-3 px-0 pt-2 bg-dark">
             <!-- align-items-sm-start -->
             <div class="sidebar text-white min-vh-100">
-
+            
                 <a href="index.php" class="divLogo text-white text-decoration-none">
                     <img src="../images/logo50x50.png" class="logo40x40" alt="">
                     <span class="titrePerso">STEMA</span>

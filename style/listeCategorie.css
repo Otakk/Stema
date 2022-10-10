@@ -1,0 +1,12 @@
+body{
+    height:100vh;
+}
+
+.categorie-card{
+    max-height:600px !important;
+}
+
+.categorie-card-img{
+    background-position: center;
+    height:15rem;
+}

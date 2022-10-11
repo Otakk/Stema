@@ -12,7 +12,20 @@ p {
 }
 
 body {
-  background-color: #f5f5f5;
+  min-height: 100%;
+  padding-top: 3.5rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-image: linear-gradient(to right bottom, #3747ce, #0068e0, #0084ea, #009dec, #00b4eb, #03c2ec, #29cfeb, #49dbe8, #47e3e8, #4aece6, #52f3e2, #5ffbdd);
+  background-size: 100%;
+  caret-color: transparent;
 }
 
 section {
@@ -28,6 +41,7 @@ h1 {
   margin-top: 30px;
   margin-bottom: 40px;
 }
+
 ul {
   list-style-type: none;
 }
@@ -74,6 +88,38 @@ ul {
   margin-bottom: 10px;
 }
 
+
+/* ---------------- PAGE ACCUEIL ---------------- */
+
+.containerAccueil {
+  display: flex;
+  height: 78%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.titreAccueil {
+  font-family: "Lato", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+.divCentrale {
+  font-family: "Lato", sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+.divFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .polygon {
   position: absolute;
   right: 0;
@@ -86,6 +132,7 @@ ul {
   background: url("../images/pegi.jpg");
   background-size: initial;
 }
+
 
 .polygon > p {
   font-family: "Kanit", sans-serif;
@@ -169,12 +216,12 @@ ul {
   margin-left: 5%;
 }
 
-li > .nav-link {
+li>.nav-link {
   padding-top: 0.5px;
   padding-bottom: 0.5px;
 }
 
-#menu > li {
+#menu>li {
   width: 100%;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -184,30 +231,37 @@ li > .nav-link {
 .accordion-item {
   margin-left: 5%;
 }
+
 .accordion-button,
 .accordion-button:not(.collapsed),
 #accordionCategorie {
   background-color: #212529;
 }
-.nav-item:hover,
+
+/* .nav-item:hover,
 .accordion-item:hover,
 .accordion-button:hover,
 #accordionCategorie:hover {
   background-color: brown;
 }
-.accordion-button:not(.collapsed) {
+
+.accordion-button:not(.collapsed)+.accordion-collapse:hover {
   background-color: brown;
-}
+} */
+
 .accordion-item {
   margin: 0;
 }
+
 #accordionCategorie {
   padding-left: 13px;
 }
+
 .nav-link:focus,
 .nav-link:hover {
   color: #212529;
 }
+
 /* .greyHover:hover {
   background-color: grey;
 } */
@@ -219,6 +273,7 @@ li > .nav-link {
   font-weight: 300;
   letter-spacing: 0.08em;
 }
+
 .h2Perso {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
@@ -239,6 +294,7 @@ li > .nav-link {
   outline: 0;
   box-shadow: none;
 }
+
 .accordion-button:after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
   margin-left: 5px;
@@ -251,7 +307,54 @@ li > .nav-link {
   justify-content: space-between;
   padding-right: 24px;
 }
+
 .nomContact {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+
+.nomContact:hover {
+  color: rgb(25, 126, 189);
+}
+
+.circleIcon {
+  color: rgb(9, 255, 0);
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.sombre {
+  color: #212529;
+}
+
+.blanc {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+
+.bleu {
+  color: rgb(187, 49, 27) !important;
+}
+.rouge {
+  color: rgb(25, 126, 189) !important;
+}
+
+.pseudo {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(25, 126, 189);
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.titreSection {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: white;
@@ -259,19 +362,64 @@ li > .nav-link {
   font-weight: 300;
   letter-spacing: 0.08em;
 }
-.nomContact:hover {
-  color: rgb(189, 25, 25);
+
+.divCardsContact {
+  display: flex;
+  align-items: flex-start;
 }
-.circleIcon {
-  color: rgb(9, 255, 0);
+
+.divInfosJeux,
+.divInfosPlate,
+.cardInfosJeux {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.w-80 {
-  width: 80%;
+
+.divCardsJeuxPlate {
+  display: flex;
+  justify-content: space-around;
 }
-.sombre {
-  color: #212529;
-}
-.blanc {
-  color: #ffffff;
+
+/* .cardInfoJeux
+{
+  padding: 10px;
+  border-radius: 10%;
+  background-color: #464d53;
+} */
+.titrePerso2 {
   font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+
+.br-20 {
+  border-radius: 20px;
+}
+
+.kanit,
+.kanit>li {
+  font-family: "Kanit", sans-serif;
+}
+
+.fa-xbox:before {
+  /* font-family: 'Font Awesome 5 Free';
+  font-weight: 900; */
+  color: red;
+}
+
+.fa-gamepad,
+.fa-desktop,
+.fa-mobile {
+  color: rgb(25, 126, 189);
+  margin-right: 7px;
+}
+
+.liPlate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

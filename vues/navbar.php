@@ -19,7 +19,9 @@ $listeCategories = $objetCategorie->listeCategories();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    
+    <link rel="stylesheet" href="/fonts/fontawesome-free-5.3.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/listeCategorie.css">
 </head>
@@ -46,12 +48,12 @@ $listeCategories = $objetCategorie->listeCategories();
                     <li class="accordion accordion-flush py-1" id="accordionFlushExample">
                         <div class="accordion-item" id="accordionCategorie">
                             <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button h2Perso text-white px-0 py-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <button class="accordion-button h2Perso text-white px-0 py-2 collapsed" id="accordionButton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                     <span class="h2Perso ms-1">Catégories</span>
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <ul class="accordion-body pt-0">
+                                <ul class="accordion-body pt-0" id="accordionBody">
                                     <li class="w-100 greyHover">
                                         <a href="listeCategories.tpl.php" class="nav-link subitem px-0">Voir tous</a>
                                     </li>
@@ -74,6 +76,5 @@ $listeCategories = $objetCategorie->listeCategories();
                             <span class="h2Perso ms-1">Contacts</span></a>
                     </li>
                 </ul>
-                <hr>
             </div>
         </div>

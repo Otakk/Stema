@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
-
-/* Page des jeux */
+/* font-family: "Kanit", sans-serif; */
 
 * {
   margin: 0;
@@ -21,7 +20,8 @@ section {
   justify-content: start;
   flex-wrap: wrap;
   gap: 50px;
-  width: 80%;;
+  width: 100%;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -32,19 +32,20 @@ ul {
   list-style-type: none;
 }
 
-#navbar{
-    width: 260px;
+#navbar {
+  width: 260px;
 }
 
-.altmain{
-    width: 100%;
-}
 
-.container {
-  padding-left: 50px;
+/* ---------------- PAGE JEU INDIVIDUEL ----------------*/
+
+.containerr {
+  width: 80%;
+  padding-left: 50px ;
 }
 
 .cat_card {
+  position: relative; 
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -56,15 +57,12 @@ ul {
 }
 
 .cat_card:hover {
-    box-shadow: 0px 0px 10px #181818d3, 0px 0px 10px #181818d3;
-    transition: 0.2s ease;
+  box-shadow: 0px 0px 10px #181818d3, 0px 0px 10px #181818d3;
+  transition: 0.2s ease;
 }
 
 .jeu_img {
-  height: 100%;
-  background: url("../images/img.jpg");
-  background-size: cover;
-  background-position: center center;
+ 
   border-radius: 18px 18px 0 0;
 }
 
@@ -78,15 +76,43 @@ ul {
   margin-bottom: 10px;
 }
 
+.polygon {
+  position: absolute;
+  right:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  clip-path: polygon(-83.34% -25px, 20% -4px, 105% 73.33%, 107.01% 124.00%);
+  background : url('../images/pegi.jpg');
+  background-size: initial;
+
+}
+
+.polygon > p {
+  font-family: "Kanit", sans-serif;
+  color: black;
+}
+
+/* ---------------- NAV BAR && MAIN ----------------*/
+
+
+.altmain {
+  width: 100%;
+}
+
 .logo40x40 {
   width: 40px;
   height: auto;
   margin-right: 10px;
 }
+
 .sidebar {
   display: flex;
   flex-direction: column;
 }
+
 .divLogo {
   display: flex;
   justify-content: center;
@@ -117,7 +143,8 @@ li > .nav-link {
   padding-bottom: 6px;
 }
 
-.nav-link, .accordion-item {
+.nav-link,
+.accordion-item {
   margin-left: 5%;
 }
 .accordion-button, .accordion-button:not(.collapsed), #accordionCategorie {

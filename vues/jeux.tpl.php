@@ -17,8 +17,9 @@
                     $instance->gamebyCat($_GET['nom']);
 
                 }else{
-                    $instance->allGames();                
+                    $instance->allGames();
                 } ?>
+                
                 
             </section>
 

@@ -16,7 +16,3 @@ require_once "navbar.php";
         </div>
     </div>
 </div>
-
-<script>
-
-</script>

@@ -21,7 +21,7 @@ section {
   justify-content: start;
   flex-wrap: wrap;
   gap: 50px;
-  width: 80%;;
+  width: 100%;
 }
 
 h1 {
@@ -29,16 +29,17 @@ h1 {
   margin-bottom: 40px;
 }
 
-#navbar{
-    width: 260px;
+#navbar {
+  width: 260px;
 }
 
-.altmain{
-    width: 100%;
+.altmain {
+  width: 100%;
 }
 
-.container {
-  padding-left: 50px;
+.containerr {
+  width: 80%;
+  padding-left: 50px ;
 }
 
 .cat_card {
@@ -53,13 +54,12 @@ h1 {
 }
 
 .cat_card:hover {
-    box-shadow: 0px 0px 10px #181818d3, 0px 0px 10px #181818d3;
-    transition: 0.2s ease;
+  box-shadow: 0px 0px 10px #181818d3, 0px 0px 10px #181818d3;
+  transition: 0.2s ease;
 }
 
 .jeu_img {
   height: 100%;
-  background: url("../images/img.jpg");
   background-size: cover;
   background-position: center center;
   border-radius: 18px 18px 0 0;
@@ -114,7 +114,8 @@ li > .nav-link {
   padding-bottom: 6px;
 }
 
-.nav-link, .accordion-item {
+.nav-link,
+.accordion-item {
   margin-left: 5%;
 }
 

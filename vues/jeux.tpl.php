@@ -4,14 +4,14 @@
     $instance = new Jeux();
 ?>
 
-        <div class = 'container'>
+        <div class = 'containerr'>
 
             <h1>Mes jeux</h1>
 
             <section>
 
-                <?php $instance->UniqueCat(); ?>
-
+                <?php $instance->uniqueJeu(); ?>
+                <?php $instance->jeuImg(); ?>
             </section>
 
         </div>

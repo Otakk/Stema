@@ -36,16 +36,15 @@ ul {
   width: 260px;
 }
 
-
-/* ---------------- PAGE JEU INDIVIDUEL ----------------*/
+/* ---------------- PAGE JEUX ----------------*/
 
 .containerr {
   width: 80%;
-  padding-left: 50px ;
+  padding-left: 50px;
 }
 
 .cat_card {
-  position: relative; 
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -62,7 +61,6 @@ ul {
 }
 
 .jeu_img {
- 
   border-radius: 18px 18px 0 0;
 }
 
@@ -78,16 +76,15 @@ ul {
 
 .polygon {
   position: absolute;
-  right:0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
   width: 60px;
-  clip-path: polygon(-83.34% -25px, 20% -4px, 105% 73.33%, 107.01% 124.00%);
-  background : url('../images/pegi.jpg');
+  clip-path: polygon(-83.34% -25px, 20% -4px, 105% 73.33%, 107.01% 124%);
+  background: url("../images/pegi.jpg");
   background-size: initial;
-
 }
 
 .polygon > p {
@@ -95,8 +92,48 @@ ul {
   color: black;
 }
 
-/* ---------------- NAV BAR && MAIN ----------------*/
+/* ---------------- INDIVIDUAL GAME CARD ----------------*/
 
+.game_card {
+  display: flex;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 6px 6px 15px #9b9b9b, -6px -6px 15px #ffffff;
+  font-family: "Kanit", sans-serif;
+  gap: 35px;
+  width: 70%;
+}
+
+.game_img {
+  height: 500px;
+  background-position: center center;
+}
+
+.game_card_left {
+  width: 100%;
+}
+
+.game_card_right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.game_desc {
+  width: 100%;
+  text-align: justify;
+}
+
+.date_obt {
+  font-size: 2rem;
+  text-align: end;
+  margin-bottom: 35px;
+  margin-top: 30px ;
+}
+
+/* ---------------- NAV BAR && MAIN ----------------*/
 
 .altmain {
   width: 100%;
@@ -147,13 +184,18 @@ li > .nav-link {
 .accordion-item {
   margin-left: 5%;
 }
-.accordion-button, .accordion-button:not(.collapsed), #accordionCategorie {
+.accordion-button,
+.accordion-button:not(.collapsed),
+#accordionCategorie {
   background-color: #212529;
 }
-.nav-item:hover, .accordion-item:hover, .accordion-button:hover, #accordionCategorie:hover {
+.nav-item:hover,
+.accordion-item:hover,
+.accordion-button:hover,
+#accordionCategorie:hover {
   background-color: brown;
 }
-.accordion-button:not(.collapsed) + .accordion-collapse:hover {
+.accordion-button:not(.collapsed) {
   background-color: brown;
 }
 .accordion-item {
@@ -162,7 +204,8 @@ li > .nav-link {
 #accordionCategorie {
   padding-left: 13px;
 }
-.nav-link:focus, .nav-link:hover {
+.nav-link:focus,
+.nav-link:hover {
   color: #212529;
 }
 /* .greyHover:hover {

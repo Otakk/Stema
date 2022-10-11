@@ -24,7 +24,7 @@ class Jeux {
             $this-> pegi = $array->{'fields'}->{'PEGI'};
             $this-> langue = $array->{'fields'}->{'Langues'};
             $this-> codeLangue = $array->{'fields'}->{'Code (from Langues)'};
-            $this-> date = $array->{'fields'}->{'Date de sortie'};
+            $this-> date = $array->{'fields'}->{'Date d\'obtention'};
             $this-> img = $array->{'fields'}->{'img'};
             $this-> contacts = $array->{'fields'}->{'Contacts'};
         }
@@ -44,7 +44,6 @@ class Jeux {
 
         $resultat = curl_exec($session);
         $array = json_decode($resultat);
-        var_dump($array);
         foreach ($array->{'records'} as $value) {
             $res = ($value->{'fields'}->{'img'});
             ?>
@@ -69,7 +68,7 @@ class Jeux {
             $res = ($value->{'fields'}->{'img'});
             ?>
                 <div class='cat_card'>
-                    <a class="jeu_img" href=""
+                    <a class="jeu_img" href="../vues/jeu.php?j=<?= $value->{'id'};?>"
                     style="background: url('<?= $res; ?>');
                             height: 100%; background-size: cover;
                             background-position: center center;"></a>

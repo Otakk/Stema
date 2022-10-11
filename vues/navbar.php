@@ -1,5 +1,5 @@
 <?php
-require_once "../modeles/modele.php";
+require_once "../Controller/modele.php";
 $objetCategorie = new Categories();
 $listeCategories = $objetCategorie->listeCategories();
 ?>

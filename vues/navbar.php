@@ -55,7 +55,7 @@ $listeCategories = $objetCategorie->listeCategories();
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <ul class="accordion-body pt-0" id="accordionBody">
                                     <li class="w-100 greyHover">
-                                        <a href="listeCategories.php" class="nav-link subitem px-0">Voir tous</a>
+                                        <a href="listeCategories.tpl.php" class="nav-link subitem px-0">Voir tous</a>
                                     </li>
                                     <?php
                                     $listeCategorie = $objetCategorie->listeCategories();

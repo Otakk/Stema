@@ -4,24 +4,33 @@ $ListeCategorie = new ListeCategorie();
 $array = $ListeCategorie->ListeCategorie();
 ?>
 
-<section class="container-fluid bg-dark h-100">
-  <div class="container text-center">
-      <div class="row">
+<div class = 'containerr'>
+
+<h1>Mes jeux</h1>
+
+<section>
         <?php
         foreach($array->{'records'} as $value) {
-        ?>
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4 h-25 categorie-card">
-            <div class="card">
-                <a href="jeux.tpl.php?nom=<?= $value->{"fields"}->{"Name"};?>"><img src="<?=$value->{"fields"}->{"Logo"};?>" class="card-img-top img-fluid img-thumbnail categorie-card-img"alt="..."></a>
-                <a href="jeux.tpl.php?nom=<?= $value->{"fields"}->{"Name"};?>"><div class="card-body">
-                    <h3><?= $value->{"fields"}->{"Name"};?></h3>
-                </div></a>
-            </div>
-        </div>
+        
+                    $res = ($value->{'fields'}->{'Logo'});
+            ?>
+                <div class='cat_card'>
+                    <a class="jeu_img" href="jeux.tpl.php?nom=<?= $value->{"fields"}->{"Name"};?>"
+                    style="background: url('<?= $res; ?>');
+                            height: 100%; background-size: cover;
+                            background-position: center center;"></a>
+                    <div class ='cat_title' ><p> <?= ($value->{'fields'}->{'Name'}) ?> </p></div>
+                </div>
         <?php
         }
         ?>
-      </div>
-    </div>
-  </section>
+   
+</section>
+
+</div>
+</div>
+</main>
+
+
 </body>
+</html>

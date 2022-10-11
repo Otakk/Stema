@@ -1,6 +1,5 @@
 <?php 
     require_once "navbar.php";
-    require_once "../jeux.php";
     $instance = new Jeux();
 ?>
 
@@ -10,9 +9,19 @@
 
             <section>
 
-                <?php $instance->uniqueJeu(); ?>
+            <?php
+
+                if (isset($_GET['nom']) && !empty($_GET['nom']))
+
+                {
+                    $instance->gamebyCat($_GET['nom']);
+
+                }else{
+                    $instance->allGames();
+                } ?>
                 
-            </section>
+                
+            </section>  
 
         </div>
     </div>

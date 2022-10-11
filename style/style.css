@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 
-/* Page des jeux */
-
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +20,7 @@ section {
   flex-wrap: wrap;
   gap: 50px;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -33,9 +32,8 @@ h1 {
   width: 260px;
 }
 
-.altmain {
-  width: 100%;
-}
+
+/* ---------------- PAGE JEU INDIVIDUEL ----------------*/
 
 .containerr {
   width: 80%;
@@ -59,9 +57,7 @@ h1 {
 }
 
 .jeu_img {
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
+ 
   border-radius: 18px 18px 0 0;
 }
 
@@ -75,15 +71,25 @@ h1 {
   margin-bottom: 10px;
 }
 
+
+/* ---------------- NAV BAR && MAIN ----------------*/
+
+
+.altmain {
+  width: 100%;
+}
+
 .logo40x40 {
   width: 40px;
   height: auto;
   margin-right: 10px;
 }
+
 .sidebar {
   display: flex;
   flex-direction: column;
 }
+
 .divLogo {
   display: flex;
   justify-content: center;

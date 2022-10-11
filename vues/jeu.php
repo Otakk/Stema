@@ -1,10 +1,9 @@
 <?php 
     require_once "navbar.php";
-    !empty($_GET['j']) ? $instance = new Jeux($_GET['j']) : $instance = new Jeux();
+    if(isset($_GET['j']) && !empty($_GET['j']))
+    {
+        $instance = new Jeux($_GET['j']);
 ?>
-
-
-
         <div class = 'containerr'>
 
             <section>
@@ -60,3 +59,10 @@
         </main>
     </body>
 </html>
+<?php
+    }else{
+        ?>
+        <div class='alert alert-danger text-center'><a href="../vues/index.php"><h4>Erreur de chemin d'accées vous allez etre redirigez d'ici quelques instants ou cliquez ici pour être redigeré</h4></a></div>
+        <script>window.location.replace("../vues/index.php");</script>
+        <?php
+    }

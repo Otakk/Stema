@@ -1,6 +1,6 @@
     <?php
 
-class Jeux {
+class Jeux extends Main{
     private $nom;
     private $description;
     private $plateform;
@@ -28,14 +28,6 @@ class Jeux {
             $this-> img = $array->{'fields'}->{'img'};
             $this-> contacts = $array->{'fields'}->{'Contacts'};
         }
-    }
-    public function initCurl($link){
-        $session = curl_init();
-        curl_setopt($session, CURLOPT_URL, $link);
-        curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
-        $auth = "Authorization: Bearer keyUy6gh4qzzh4OLo";
-        curl_setopt($session, CURLOPT_HTTPHEADER, ['Content-Type: application/json', $auth]);
-        return $session;
     }
 
     public function gamebyCat($nom)

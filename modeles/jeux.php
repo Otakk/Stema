@@ -46,6 +46,7 @@ class Jeux {
                             height: 100%; background-size: cover;
                             background-position: center center;"></a>
                     <div class ='cat_title' ><p> <?= ($value->{'fields'}->{'Name'}) ?> </p></div>
+                    <div class = 'polygon'><p><?= ($value->{'fields'}->{'PEGI'}) ?> </p></div>
                 </div>
             <?php
         }

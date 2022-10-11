@@ -17,6 +17,9 @@ $listeCategories = $objetCategorie->listeCategories();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/listeCategorie.css">
 </head>
@@ -26,7 +29,7 @@ $listeCategories = $objetCategorie->listeCategories();
         <div id="navbar" class="col-auto col-md-3 col-xl-2 px-0 pt-2 bg-dark">
             <!-- align-items-sm-start -->
             <div class="sidebar text-white min-vh-100">
-            
+
                 <a href="index.php" class="divLogo text-white text-decoration-none">
                     <img src="../images/logo50x50.png" class="logo40x40" alt="">
                     <span class="titrePerso">STEMA</span>
@@ -41,20 +44,23 @@ $listeCategories = $objetCategorie->listeCategories();
                     </li>
 
                     <li class="accordion accordion-flush py-1" id="accordionFlushExample">
-                        <div class="accordion-item bg-dark">
+                        <div class="accordion-item" id="accordionCategorie">
                             <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button bg-dark h2Perso text-white px-0 py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    <a href="listeCategories.php" class="text-decoration-none h2Perso redHover"><span class="h2Perso ms-1">Catégories</span></a>
+                                <button class="accordion-button h2Perso text-white px-0 py-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <span class="h2Perso ms-1">Catégories</span>
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <ul class="accordion-body pt-0">
+                                    <li class="w-100 greyHover">
+                                        <a href="listeCategories.php" class="nav-link subitem px-0">Voir tous</a>
+                                    </li>
                                     <?php
                                     $listeCategorie = $objetCategorie->listeCategories();
                                     foreach ($listeCategories->{'records'} as $categorie) {
                                     ?>
-                                        <li class="w-100">
-                                            <a href="#" class="nav-link subitem px-0"> <span><?= $categorie->{'fields'}->{'Name'}; ?></span></a>
+                                        <li class="w-100 greyHover">
+                                            <a href="jeux.tpl.php?nom=<?= $categorie->{'fields'}->{'Name'}; ?>" class="nav-link subitem px-0"> <span><?= $categorie->{'fields'}->{'Name'}; ?></span></a>
                                         </li>
                                     <?php
                                     }
@@ -64,7 +70,7 @@ $listeCategories = $objetCategorie->listeCategories();
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link px-0 align-middle redHover">
+                        <a href="contacts.php" class="nav-link px-0 align-middle redHover">
                             <span class="h2Perso ms-1">Contacts</span></a>
                     </li>
                 </ul>

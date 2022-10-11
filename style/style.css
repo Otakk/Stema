@@ -27,6 +27,9 @@ h1 {
   margin-top: 30px;
   margin-bottom: 40px;
 }
+ul {
+  list-style-type: none;
+}
 
 #navbar {
   width: 260px;
@@ -124,11 +127,27 @@ li > .nav-link {
 .accordion-item {
   margin-left: 5%;
 }
-
-.nav-item:hover {
+.accordion-button, .accordion-button:not(.collapsed), #accordionCategorie {
+  background-color: #212529;
+}
+.nav-item:hover, .accordion-item:hover, .accordion-button:hover, #accordionCategorie:hover {
   background-color: brown;
 }
-
+.accordion-button:not(.collapsed) + .accordion-collapse:hover {
+  background-color: brown;
+}
+.accordion-item {
+  margin: 0;
+}
+#accordionCategorie {
+  padding-left: 13px;
+}
+.nav-link:focus, .nav-link:hover {
+  color: #212529;
+}
+/* .greyHover:hover {
+  background-color: grey;
+} */
 .titrePerso {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
@@ -160,4 +179,36 @@ li > .nav-link {
 .accordion-button:after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
   margin-left: 5px;
+}
+
+/* CONTACTS */
+.divContact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 24px;
+}
+.nomContact {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+.nomContact:hover {
+  color: rgb(189, 25, 25);
+}
+.circleIcon {
+  color: rgb(9, 255, 0);
+}
+.w-80 {
+  width: 80%;
+}
+.sombre {
+  color: #212529;
+}
+.blanc {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
 }

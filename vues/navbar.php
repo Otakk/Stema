@@ -24,6 +24,8 @@ $listeCategories = $objetCategorie->listeCategories();
 
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/listeCategorie.css">
+<script src="https://kit.fontawesome.com/6200c1620f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <main class="container-fluid">

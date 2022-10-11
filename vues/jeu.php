@@ -25,7 +25,7 @@
                         <div class="game_card_right">
 
                         <div class="date_obt">
-                            <p>Obetenu le : <?= $instance->getDate();?></p>
+                            <p>Obtenu le : <?= $instance->getDate();?></p>
                         </div>
                             <div class="game_desc"><p><?= $instance->getDescription();?></p></div>
                                 <div class="smalzzzl">

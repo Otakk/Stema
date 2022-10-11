@@ -11,7 +11,7 @@
             <section>
 
                 <?php $instance->uniqueJeu(); ?>
-                <?php $instance->jeuImg(); ?>
+                
             </section>
 
         </div>

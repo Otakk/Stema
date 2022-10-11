@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
-/* font-family: "Kanit", sans-serif; */
 
 * {
   margin: 0;
@@ -16,16 +15,14 @@ body {
   padding-top: 3.5rem;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
   overflow-x: hidden;
   background-attachment: fixed;
-  background-image: linear-gradient(to right bottom, #3747ce, #0068e0, #0084ea, #009dec, #00b4eb, #03c2ec, #29cfeb, #49dbe8, #47e3e8, #4aece6, #52f3e2, #5ffbdd);
-  background-size: 100%;
-  caret-color: transparent;
+  background-color: #e9e9e9;
 }
 
 section {
@@ -48,95 +45,6 @@ ul {
 
 #navbar {
   width: 260px;
-}
-
-/* ---------------- PAGE JEUX ----------------*/
-
-.containerr {
-  width: 80%;
-  padding-left: 50px;
-}
-
-.cat_card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  width: 200px;
-  border: #262626 solid 2px;
-  border-radius: 20px;
-  background-color: #262626;
-  box-shadow: 5px 5px 10px #020202bb, -5px -5px 10px #ffffff;
-}
-
-.cat_card:hover {
-  box-shadow: 0px 0px 10px #181818d3, 0px 0px 10px #181818d3;
-  transition: 0.2s ease;
-}
-
-.jeu_img {
-  border-radius: 18px 18px 0 0;
-}
-
-.cat_title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Kanit", sans-serif;
-  color: #f5f5f5;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-
-/* ---------------- PAGE ACCUEIL ---------------- */
-
-.containerAccueil {
-  display: flex;
-  height: 78%;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.titreAccueil {
-  font-family: "Lato", sans-serif;
-  color: black;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-}
-.divCentrale {
-  font-family: "Lato", sans-serif;
-  color: black;
-  text-align: center;
-  font-size: 35px;
-  font-weight: 300;
-  letter-spacing: 0.04em;
-}
-.divFooter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.polygon {
-  position: absolute;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 60px;
-  clip-path: polygon(-83.34% -25px, 20% -4px, 105% 73.33%, 107.01% 124%);
-  background: url("../images/pegi.jpg");
-  background-size: initial;
-}
-
-
-.polygon > p {
-  font-family: "Kanit", sans-serif;
-  color: black;
 }
 
 /* ---------------- INDIVIDUAL GAME CARD ----------------*/
@@ -180,7 +88,97 @@ ul {
   margin-top: 30px ;
 }
 
+.polygon {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  clip-path: polygon(-83.34% -25px, 20% -4px, 105% 73.33%, 107.01% 124%);
+  background: url("../images/pegi.jpg");
+  background-size: initial;
+}
+
+.polygon > p {
+  font-family: "Kanit", sans-serif;
+  color: black;
+}
+
+/* ---------------- PAGE JEU INDIVIDUEL ----------------*/
+
+.containerr {
+  width: 85%;
+  padding-left: 50px;
+}
+
+.cat_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 200px;
+  border: #262626 solid 2px;
+  border-radius: 20px;
+  background-color: #262626;
+  box-shadow: 5px 5px 10px #020202bb, -5px -5px 10px #ffffff;
+}
+
+.cat_card:hover {
+  box-shadow: 0px 0px 10px #181818d3, 0px 0px 10px #181818d3;
+  transition: 0.2s ease;
+}
+
+.jeu_img {
+
+  border-radius: 18px 18px 0 0;
+}
+
+.cat_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kanit", sans-serif;
+  color: #f5f5f5;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ---------------- PAGE ACCUEIL ---------------- */
+
+.containerAccueil {
+  display: flex;
+  height: 78%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.titreAccueil {
+  font-family: "Lato", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+.divCentrale {
+  font-family: "Lato", sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+.divFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
 /* ---------------- NAV BAR && MAIN ----------------*/
+
 
 .altmain {
   width: 100%;
@@ -238,16 +236,9 @@ li>.nav-link {
   background-color: #212529;
 }
 
-/* .nav-item:hover,
-.accordion-item:hover,
-.accordion-button:hover,
-#accordionCategorie:hover {
+.nav-item:hover:hover {
   background-color: brown;
 }
-
-.accordion-button:not(.collapsed)+.accordion-collapse:hover {
-  background-color: brown;
-} */
 
 .accordion-item {
   margin: 0;
@@ -257,9 +248,8 @@ li>.nav-link {
   padding-left: 13px;
 }
 
-.nav-link:focus,
 .nav-link:hover {
-  color: #212529;
+  color: brown;
 }
 
 /* .greyHover:hover {
@@ -336,7 +326,6 @@ li>.nav-link {
   color: #ffffff;
   font-family: "Lato", sans-serif;
 }
-
 .bleu {
   color: rgb(187, 49, 27) !important;
 }

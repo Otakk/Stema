@@ -60,5 +60,3 @@ $listePlateContacts = $listeInfosContacts->{'fields'}->{'NomPlateforme'};
 </div>
 </div>
 </div>
-
-<script src="https://kit.fontawesome.com/6200c1620f.js" crossorigin="anonymous"></script>

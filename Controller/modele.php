@@ -1,6 +1,6 @@
 <?php 
-require_once "../modeles/ListeCategories.php";
-require_once "../modeles/categorie.php";
-require_once "../modeles/contact.php";
-require_once "../modeles/jeux.php";
+require_once "../Controller/ListeCategories.php";
+require_once "../Controller/categorie.php";
+require_once "../Controller/contact.php";
+require_once "../Controller/jeux.php";
 ?>

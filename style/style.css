@@ -15,7 +15,7 @@ body {
   padding-top: 3.5rem;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -109,7 +109,7 @@ ul {
 /* ---------------- PAGE JEU INDIVIDUEL ----------------*/
 
 .containerr {
-  width: 80%;
+  width: 85%;
   padding-left: 50px;
 }
 
@@ -236,16 +236,9 @@ li>.nav-link {
   background-color: #212529;
 }
 
-/* .nav-item:hover,
-.accordion-item:hover,
-.accordion-button:hover,
-#accordionCategorie:hover {
+.nav-item:hover:hover {
   background-color: brown;
 }
-
-.accordion-button:not(.collapsed)+.accordion-collapse:hover {
-  background-color: brown;
-} */
 
 .accordion-item {
   margin: 0;
@@ -255,9 +248,8 @@ li>.nav-link {
   padding-left: 13px;
 }
 
-.nav-link:focus,
 .nav-link:hover {
-  color: #212529;
+  color: brown;
 }
 
 /* .greyHover:hover {

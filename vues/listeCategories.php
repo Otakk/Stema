@@ -1,7 +1,7 @@
 <?php
 require_once "navbar.php";
-$ListeCategorie = new ListeCategorie();
-$array = $ListeCategorie->ListeCategorie();
+$ListeCategorie = new Categories();
+$array = $ListeCategorie->listeCategories();
 ?>
 <section class="container-fluid bg-dark h-100">
 <div class="container text-center">

@@ -48,13 +48,13 @@ $listeCategories = $objetCategorie->listeCategories();
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body pt-0">
+                                <div class="accordion-body py-0">
                                     <?php
                                     $listeCategorie = $objetCategorie->listeCategories();
                                     foreach ($listeCategories->{'records'} as $categorie) {
                                     ?>
                                         <li class="w-100">
-                                            <a href="#" class="nav-link subitem px-0"> <span><?= $categorie->{'fields'}->{'Name'}; ?></span></a>
+                                            <a href="jeux.tpl.php?nom=<?= $categorie->{'fields'}->{'Name'}; ?>" class="nav-link subitem px-0"> <span><?= $categorie->{'fields'}->{'Name'}; ?></span></a>
                                         </li>
                                     <?php
                                     }
@@ -73,4 +73,3 @@ $listeCategories = $objetCategorie->listeCategories();
         </div>
         <div class="col py-3">
 
-    </div>

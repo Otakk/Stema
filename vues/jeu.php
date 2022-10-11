@@ -52,8 +52,8 @@
                             </div>
                         </div>
                     </div>
+                </section>
                 </div>
-                </section
             </div>
         </main>
     </body>

@@ -3,13 +3,9 @@
     !empty($_GET['j']) ? $instance = new Jeux($_GET['j']) : $instance = new Jeux();
 ?>
 
-
-
         <div class = 'containerr'>
-
             <section>
-
-                    <div class="game_card">
+                <div class="game_card">
 
                     <div class = "game_card_left">
                         <div class="title">
@@ -20,7 +16,7 @@
                             "background: url('<?= $instance->getImg(); ?>');
                             background-size: cover;
                             background-position: center center;"></div>
-                    </div>
+                         </div>
 
                         <div class="game_card_right">
 
@@ -54,9 +50,10 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
-            </div>
-        </main>
-    </body>
+            </section>
+        </div>
+    </main>
+</body>
 </html>

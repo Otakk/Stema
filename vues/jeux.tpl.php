@@ -17,7 +17,7 @@
                     if (isset($_GET['nom']) && !empty($_GET['nom']))
 
                     {
-                        $instance->gamebyCat($_GET['nom']);
+                        $instance->gamebyCat(urlencode($_GET['nom']));
 
                     }else{
                         $instance->allGames();

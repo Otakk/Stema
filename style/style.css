@@ -141,47 +141,6 @@ h3 {
   color: #f5f5f5;
 }
 
-#add_btn_submit {
-  height: 50px;
-  width: 100px;
-  background-color: whitesmoke;
-  border: none;
-  margin-right: 100px;
-  margin-bottom: 60px;
-  transition: 100ms;
-  box-shadow: -3px 9px #262626;
-  border-radius: 5px;
-}
-
-#add_btn_submit:hover {
-  transform: translateY(2px);
-  box-shadow: -3px 7px #262626;
-}
-
-#add_btn_submit:active {
-  transform: translateY(9px);
-  box-shadow: 0px 2px #262626;
-  transition: 100ms;
-}
-#add_game_form {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#closeModal {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #770202;
-  top: 0;
-  border-radius: 0 15px 0 15px;
-  color: #fff;
-}
-
 /* ---------------- PAGE JEU INDIVIDUEL ----------------*/
 
 .containerr {
@@ -248,6 +207,7 @@ h3 {
   transition: 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-fill-mode: forwards;
   transform-origin: top;
+  visibility: hidden;
 }
 
 #add_modal.active {
@@ -267,6 +227,7 @@ h3 {
   transition: 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-fill-mode: forwards;
   transform-origin: top;
+  visibility: visible;
 }
 
 #background_blur {
@@ -420,6 +381,47 @@ h3 {
 #inner {
   display: flex;
   flex-direction: column;
+}
+
+#add_btn_submit {
+  height: 50px;
+  width: 100px;
+  background-color: whitesmoke;
+  border: none;
+  margin-right: 100px;
+  margin-bottom: 60px;
+  transition: 100ms;
+  box-shadow: -3px 9px #262626;
+  border-radius: 5px;
+}
+
+#add_btn_submit:hover {
+  transform: translateY(2px);
+  box-shadow: -3px 7px #262626;
+}
+
+#add_btn_submit:active {
+  transform: translateY(9px);
+  box-shadow: 0px 2px #262626;
+  transition: 100ms;
+}
+#add_game_form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#closeModal {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #770202;
+  top: 0;
+  border-radius: 0 15px 0 15px;
+  color: #fff;
 }
 
 /* ---------------- PAGE ACCUEIL ---------------- */

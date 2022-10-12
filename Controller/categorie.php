@@ -1,6 +1,6 @@
 <?php
 
-class Categories extends Main{
+class Categories extends Main {
 
     public function listeCategories(){
         $session = $this->initCurl("https://api.airtable.com/v0/appaIyKt419Or5Axf/Categorie");

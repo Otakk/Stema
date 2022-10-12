@@ -578,26 +578,29 @@ li > .nav-link {
 .accordion-item {
   margin-left: 5%;
 }
-
 .accordion-button,
 .accordion-button:not(.collapsed),
 #accordionCategorie {
   background-color: #212529;
   align-items: stretch;
 }
-
 .nav-item:hover:hover {
   background-color: brown;
 }
-
 .accordion-item {
   margin: 0;
 }
-
 #accordionCategorie {
   padding-left: 13px;
 }
-
+#accordionFlushContact > .accordion-item {
+  border-radius: 20px;
+}
+#flush-headingTwo > .accordion-button {
+  font-size: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 li > .nav-link:focus, .nav-link:hover {
   color: brown;
 }
@@ -650,7 +653,6 @@ li > .nav-link:focus, .nav-link:hover {
   outline: 0;
   box-shadow: none;
 }
-
 .accordion-button:after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
   margin-left: 5px;
@@ -672,6 +674,11 @@ li > .nav-link:focus, .nav-link:hover {
 }
 .nomContact:hover {
   color: rgb(25, 126, 189);
+}
+#nomContact {
+  border: none;
+  background: #f8f9fa;
+  opacity: 80%;
 }
 .circleIcon {
   color: rgb(9, 255, 0);

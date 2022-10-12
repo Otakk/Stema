@@ -1,4 +1,4 @@
-    <?php
+<?php
 
 class Jeux extends Main{
     private $nom;
@@ -29,7 +29,14 @@ class Jeux extends Main{
             $this-> contacts = $array->{'fields'}->{'Contacts'};
         }
     }
-
+    public function listeJeux() {
+        $session = $this->initCurl("https://api.airtable.com/v0/appaIyKt419Or5Axf/Jeux");
+        
+        $resultat = curl_exec($session);
+        curl_close($session);
+        $array = json_decode($resultat);
+        return $array;
+    }
     public function gamebyCat($nom)
     {
         $session = $this->initCurl("https://api.airtable.com/v0/appaIyKt419Or5Axf/Jeux?view=".$nom);
@@ -44,7 +51,9 @@ class Jeux extends Main{
                     style="background: url('<?= $res; ?>');
                             height: 100%; background-size: cover;
                             background-position: center center;"></a>
-                    <div class ='cat_title' ><p> <?= ($value->{'fields'}->{'Name'}) ?> </p></div>
+                    <div class ='cat_title' ><p> <?= ($value->{'fields'}->{'Name'}) ?> </p></div>                 
+                    <div class = 'polygon'><p><?= ($value->{'fields'}->{'PEGI'}) ?> </p></div>
+                    <div class = 'fav'><button data-g="<?= $value->{'id'};?>" onclick='addFav(this.getAttribute("data-g"))'></div>
                 </div>
             <?php
         }
@@ -67,6 +76,9 @@ class Jeux extends Main{
                             background-position: center center;"></a>
                     <div class ='cat_title' ><p> <?= ($value->{'fields'}->{'Name'}) ?> </p></div>
                     <div class = 'polygon'><p><?= ($value->{'fields'}->{'PEGI'}) ?> </p></div>
+                    <div class = 'fav'><button value="fav" data-g="<?= $value->{'id'};?>" onclick='addFav(this,
+                    [<?php foreach($value->{"fields"}->{"Categorie"} as $Cat){echo '"'.$Cat.'"'.",";};?>])'></div>
+
                 </div>
             <?php
         }

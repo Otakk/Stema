@@ -381,8 +381,11 @@ li > .nav-link:focus, .nav-link:hover {
   color: rgb(9, 255, 0);
 }
 .crossIcon {
-  color: rgb(187, 49, 27);
+  color: rgb(201, 50, 26);
   font-size: 24px;
+}
+.crossIcon:hover {
+  color: #98222e;
 }
 .w-80 {
   width: 80%;
@@ -399,6 +402,11 @@ li > .nav-link:focus, .nav-link:hover {
 }
 .rouge {
   color: rgb(25, 126, 189) !important;
+}
+.latoSpacing {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
 }
 
 .pseudo {

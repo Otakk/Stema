@@ -25,7 +25,7 @@
                             <p>Obtenu le : <?= $instance->getDate();?></p>
                         </div>
                             <div class="game_desc"><p><?= $instance->getDescription();?></p></div>
-                                <div class="smalzzzl">
+                                <div class="smal">
 
                                     <div class="roww">
                                         <br>

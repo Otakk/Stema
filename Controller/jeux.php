@@ -49,6 +49,7 @@ class Jeux extends Main{
             <?php
         }
     }
+    
     public function allGames()
     {
         $session = $this->initCurl("https://api.airtable.com/v0/appaIyKt419Or5Axf/Jeux");

@@ -10,8 +10,7 @@ require_once "navbar.php";
         </div>
         <div class="footer">
             <div class="divFooter">
-                <div>©<span class="bleu">STEMA</span> est une création originale de <span class="bleu">Florian GASTEL</span>, <span class="bleu">Bastien LERAUT</span>, et <span class="bleu">Raphaël TISBA</span>.</div>
-                <div>Toute ressemblance avec un autre logiciel serait fortuite.</div>
+                <div>©<span class="bleu">STEMA</span> est une création originale de <span class="bleu">Florian GASTEL</span>, <span class="bleu">Bastien LERAUT</span>, et <span class="bleu">Raphaël TISBA</span>.</div>              <div>Toute ressemblance avec un autre logiciel serait fortuite.</div>
             </div>
         </div>
     </div>

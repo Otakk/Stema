@@ -25,9 +25,9 @@ $listeCategories = $objetCategorie->listeCategories();
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/listeCategorie.css">
     <script src="https://kit.fontawesome.com/6200c1620f.js" crossorigin="anonymous"></script>
-
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 </head>
-
+<body>
 <main class="container-fluid">
     <div class="row flex-nowrap altmain">
         <div id="navbar" class="col-auto col-md-3 col-xl-2 px-0 pt-2 bg-dark">

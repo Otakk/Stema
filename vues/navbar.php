@@ -30,6 +30,11 @@ $listeCategories = $objetCategorie->listeCategories();
     <!-- Local style -->
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/listeCategorie.css">
+    <link rel="stylesheet" href="../style/favGame.css">
+    <script src="https://kit.fontawesome.com/6200c1620f.js" crossorigin="anonymous"></script>
+    <script src="../script/MesFavoris.js"></script>
+</head>
+
 
     <!-- A PLACER DANS FOOTER ? -->
     <!-- Bootstrap 4 JS -->

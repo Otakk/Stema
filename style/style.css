@@ -248,7 +248,7 @@ li>.nav-link {
   padding-left: 13px;
 }
 
-.nav-link:hover {
+li > .nav-link:focus, .nav-link:hover {
   color: brown;
 }
 
@@ -297,7 +297,6 @@ li>.nav-link {
   justify-content: space-between;
   padding-right: 24px;
 }
-
 .nomContact {
   font-family: "Lato", sans-serif;
   color: white;
@@ -305,23 +304,22 @@ li>.nav-link {
   font-weight: 300;
   letter-spacing: 0.08em;
 }
-
 .nomContact:hover {
   color: rgb(25, 126, 189);
 }
-
 .circleIcon {
   color: rgb(9, 255, 0);
 }
-
+.crossIcon {
+  color: rgb(187, 49, 27);
+  font-size: 24px;
+}
 .w-80 {
   width: 80%;
 }
-
 .sombre {
   color: #212529;
 }
-
 .blanc {
   color: #ffffff;
   font-family: "Lato", sans-serif;
@@ -351,12 +349,15 @@ li>.nav-link {
   font-weight: 300;
   letter-spacing: 0.08em;
 }
-
+.cardHeaderContact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .divCardsContact {
   display: flex;
   align-items: flex-start;
 }
-
 .divInfosJeux,
 .divInfosPlate,
 .cardInfosJeux {
@@ -384,29 +385,22 @@ li>.nav-link {
   font-weight: 300;
   letter-spacing: 0.08em;
 }
-
 .br-20 {
   border-radius: 20px;
 }
-
+.mt-7 {
+  margin-top: 7rem;
+}
 .kanit,
 .kanit>li {
   font-family: "Kanit", sans-serif;
 }
-
-.fa-xbox:before {
-  /* font-family: 'Font Awesome 5 Free';
-  font-weight: 900; */
-  color: red;
-}
-
 .fa-gamepad,
 .fa-desktop,
 .fa-mobile {
   color: rgb(25, 126, 189);
   margin-right: 7px;
 }
-
 .liPlate {
   display: flex;
   align-items: center;

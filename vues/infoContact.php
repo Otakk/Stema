@@ -9,7 +9,13 @@ $listePlateContacts = $listeInfosContacts->{'fields'}->{'NomPlateforme'};
 ?>
 
 <div class="card w-50 bg-dark ms-4 p-2 br-20">
-    <h1 class="pseudo ms-2 mt-2 mb-4"><?= $listeInfosContacts->{'fields'}->{'Name'}; ?></h1>
+    <div class="card-header cardHeaderContact ms-2 mt-2 mb-4">
+        <h1 class="pseudo m-0"><?= $listeInfosContacts->{'fields'}->{'Name'}; ?></h1>
+
+        <a href="../script/supprimerContact.php?idContact=<?= $idContact; ?>" class="crossIcon" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce contact ?')">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+    </div>
     <div class="divCardsJeuxPlate">
         <div class="divInfosJeux">
             <card class="cardInfosJeux">

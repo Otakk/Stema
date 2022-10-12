@@ -1,6 +1,6 @@
-    <?php
+<?php
 
-class Jeux {
+class Jeux extends Main{
     private $nom;
     private $description;
     private $plateform;
@@ -29,14 +29,6 @@ class Jeux {
             $this-> contacts = $array->{'fields'}->{'Contacts'};
         }
     }
-    public function initCurl($link){
-        $session = curl_init();
-        curl_setopt($session, CURLOPT_URL, $link);
-        curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
-        $auth = "Authorization: Bearer keyUy6gh4qzzh4OLo";
-        curl_setopt($session, CURLOPT_HTTPHEADER, ['Content-Type: application/json', $auth]);
-        return $session;
-    }
 
     public function gamebyCat($nom)
     {
@@ -52,7 +44,9 @@ class Jeux {
                     style="background: url('<?= $res; ?>');
                             height: 100%; background-size: cover;
                             background-position: center center;"></a>
-                    <div class ='cat_title' ><p> <?= ($value->{'fields'}->{'Name'}) ?> </p></div>
+                    <div class ='cat_title' ><p> <?= ($value->{'fields'}->{'Name'}) ?> </p></div>                 
+                    <div class = 'polygon'><p><?= ($value->{'fields'}->{'PEGI'}) ?> </p></div>
+                    <div class = 'fav'><button data-g="<?= $value->{'id'};?>" onclick='addFav(this.getAttribute("data-g"))'></div>
                 </div>
             <?php
         }
@@ -74,6 +68,9 @@ class Jeux {
                             background-position: center center;"></a>
                     <div class ='cat_title' ><p> <?= ($value->{'fields'}->{'Name'}) ?> </p></div>
                     <div class = 'polygon'><p><?= ($value->{'fields'}->{'PEGI'}) ?> </p></div>
+                    <div class = 'fav'><button value="fav" data-g="<?= $value->{'id'};?>" onclick='addFav(this,
+                    [<?php foreach($value->{"fields"}->{"Categorie"} as $Cat){echo '"'.$Cat.'"'.",";};?>])'></div>
+
                 </div>
             <?php
         }

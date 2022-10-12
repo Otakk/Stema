@@ -2,7 +2,7 @@
 require_once "navbar.php";
 ?>
 
-<div class="containerr">
+<div class="containerr fondMagnifique">
     <h1 class="titreAccueil">STEMA</h1>
     <div class="containerAccueil">
         <div class="divCentrale">

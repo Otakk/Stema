@@ -172,8 +172,24 @@ ul {
 }
 .divFooter {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.fondMagnifique {
+  min-height: 100%;
+  padding-top: 3.5rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-image: linear-gradient(to right bottom, #3747ce, #0068e0, #0084ea, #009dec, #00b4eb, #03c2ec, #29cfeb, #49dbe8, #47e3e8, #4aece6, #52f3e2, #5ffbdd);
+  background-size: 100%;
+  caret-color: transparent;
 }
 
 
@@ -234,6 +250,7 @@ li>.nav-link {
 .accordion-button:not(.collapsed),
 #accordionCategorie {
   background-color: #212529;
+  align-items: stretch;
 }
 
 .nav-item:hover:hover {
@@ -255,11 +272,27 @@ li > .nav-link:focus, .nav-link:hover {
 /* .greyHover:hover {
   background-color: grey;
 } */
-.titrePerso {
+.titrePerso25 {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+.titrePerso35 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+.titrePerso45 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
   font-weight: 300;
   letter-spacing: 0.08em;
 }
@@ -321,7 +354,7 @@ li > .nav-link:focus, .nav-link:hover {
   color: #212529;
 }
 .blanc {
-  color: #ffffff;
+  color: #ffffff !important;
   font-family: "Lato", sans-serif;
 }
 .bleu {
@@ -370,26 +403,17 @@ li > .nav-link:focus, .nav-link:hover {
   display: flex;
   justify-content: space-around;
 }
-
 /* .cardInfoJeux
 {
   padding: 10px;
   border-radius: 10%;
   background-color: #464d53;
 } */
-.titrePerso2 {
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 45px;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-}
 .br-20 {
   border-radius: 20px;
 }
-.mt-7 {
-  margin-top: 7rem;
+.mt-6 {
+  margin-top: 6rem;
 }
 .kanit,
 .kanit>li {

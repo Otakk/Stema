@@ -1,7 +1,7 @@
 <?php
 require_once "../vues/navbar.php";
 ?>
-<div id="content" class="d-flex justify-content-center mt-7"></div>
+<div id="content" class="d-flex justify-content-center mt-6"></div>
 
 <script>
     var el = document.getElementById('content');

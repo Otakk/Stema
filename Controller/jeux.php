@@ -76,7 +76,14 @@ class Jeux extends Main{
             
         }
     }
-
+    public function listeJeux() {
+        $session = $this->initCurl("https://api.airtable.com/v0/appaIyKt419Or5Axf/Jeux");
+        
+        $resultat = curl_exec($session);
+        curl_close($session);
+        $array = json_decode($resultat);
+        return $array;
+    }
     public function gamebyCat($nom)
     {
         $session = $this->initCurl("https://api.airtable.com/v0/appaIyKt419Or5Axf/Jeux?view=".$nom);
@@ -145,6 +152,7 @@ class Jeux extends Main{
             <?php
         }
     }
+    
     public function allGames()
     {
         $session = $this->initCurl("https://api.airtable.com/v0/appaIyKt419Or5Axf/Jeux");

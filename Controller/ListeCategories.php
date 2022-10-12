@@ -16,6 +16,7 @@ class ListeCategorie extends Main{
         $array = json_decode($resultat);
         return $array;
     }
+
 }
 
 ?>

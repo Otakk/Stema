@@ -5,6 +5,8 @@
         $instance = new Jeux($_GET['j']);
 ?>
         <div class = 'containerr'>
+            <div id='delete'>
+            </div>
             <section>
                 <div class="game_card">
 
@@ -47,6 +49,24 @@
                                             <?php foreach($instance->getcodeLangue() as $code){ echo $code. " , ";} ?>
                                         </p>
                                     </div>
+                                    <div class="roww">
+                                        <br>
+                                        <p>PEGI <?= $instance->getPegi();?></p>
+                                    </div>
+                                    <div class="roww">
+                                        <br>
+                                        <div class="">
+                                            <h4>Contacts possédant ce jeu :</h4>
+                                            <p>
+                                            <?php foreach($instance->getContacts() as $contact){
+                                                echo $contact." ";
+                                            };?></p>
+                                        </div>
+                                    </div>
+                                    <div class="roww">
+                                        <br>
+                                        <button class='btn btn-danger'onclick="if(confirm('Voulez vous suppprimer <?=$instance->getNom();?> ?')){ deleteGame('<?=$_GET['j'];?>'); }else{ window.alert('Suppression annulée')}">Supprimer</button>
+                                    </div>
 
                                 </div>
                             </div>
@@ -56,6 +76,7 @@
                 </div>
             </div>
         </main>
+    <script src="../script/delete_game.js"></script>
     </body>
 </html>
 <?php

@@ -81,7 +81,7 @@
 
                                     <div class="label_input">
                                         <label for="i_cat">Categorie</label>
-                                        <select name="i_cat" id="i_cat">
+                                        <select class="selectpicker form-control i_cat" id="i_cat" title="Aucun jeu sélectionné" multiple data-mdb-clear-button="true" data-live-search="true" multiple>
                                             <?php
                                             foreach ($listeCategories->{'records'} as $value) {
                                             ?>
@@ -100,7 +100,7 @@
                                     </div>
                                     <div class="label_input">
                                         <label for="i_plat">Plateforme</label>
-                                        <select name="i_plat" id="i_plat">
+                                        <select class="selectpicker form-control i_plat" id="i_plat" title="Aucun jeu sélectionné" multiple data-mdb-clear-button="true" data-live-search="true">
                                             <?php 
                                             foreach ($listePlateformes->{'records'} as $value) {
                                             ?>

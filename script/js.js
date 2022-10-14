@@ -32,7 +32,7 @@ function SweetSuccess(){
         icon: 'success',
         title: 'Le jeu a bien été ajouté',
         showConfirmButton: false,
-        timer: 3500,
+        timer: 2500,
         didOpen: (toast) => {
             toast.addEventListener('mouseenter', Swal.stopTimer)
             toast.addEventListener('mouseleave', Swal.resumeTimer)

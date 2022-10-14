@@ -9,7 +9,7 @@
 
             <div class="section_container">
                 
-                <h1>Mes jeux</h1>
+                <h1 class="titrePerso35">Mes jeux</h1>
 
                 <section>
 

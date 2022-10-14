@@ -20,7 +20,7 @@ $listePlateContacts = $listeInfosContacts->{'fields'}->{'NomPlateforme'};
         <div class="divInfosJeux">
             <card class="cardInfosJeux">
                 <h2 class="titreSection">Possède :</h2>
-                <ul class="kanit p-0 m-0">
+                <ul class="p-0 m-0">
                     <?php
                     foreach ($listeJeuxContacts as $jeu) {
                     ?>
@@ -35,7 +35,7 @@ $listePlateContacts = $listeInfosContacts->{'fields'}->{'NomPlateforme'};
         </div>
         <div class="divInfosPlate">
             <h2 class="titreSection">Plateformes :</h2>
-            <ul class="kanit p-0 m-0">
+            <ul class="p-0 m-0">
                 <?php
                 foreach ($listePlateContacts as $plate) {
                 ?>

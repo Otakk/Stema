@@ -31,7 +31,6 @@ $listeCategories = $objetCategorie->listeCategories();
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/listeCategorie.css">
     <link rel="stylesheet" href="../style/favGame.css">
-    <script src="https://kit.fontawesome.com/6200c1620f.js" crossorigin="anonymous"></script>
     <script src="../script/MesFavoris.js"></script>
 </head>
 
@@ -90,7 +89,7 @@ $listeCategories = $objetCategorie->listeCategories();
                                         $listeCategorie = $objetCategorie->listeCategories();
                                         foreach ($listeCategories->{'records'} as $categorie) {
                                         ?>
-                                            <li class="w-100 greyHover">
+                                            <li class="w-100 greyHover">    
                                                 <a href="jeux.tpl.php?nom=<?= $categorie->{'fields'}->{'Name'}; ?>" class="nav-link subitem px-0"> <span><?= $categorie->{'fields'}->{'Name'}; ?></span></a>
                                             </li>
                                         <?php

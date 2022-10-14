@@ -1,3 +1,5 @@
+var el = document.getElementById('content');
+var content;
 let form = document.getElementById("formAjoutContact")
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -37,17 +39,32 @@ form.addEventListener('submit', (e) => {
             if (reponse.ok) {
                 // On recup les données
                 reponse.json().then((data) => {
+                    content = "<div class='text-center divCentrale'>Contact ajouté <br> La page va se rafraîchir automatiquement </div>"
+                    // Insertion du HTML
+                    el.classList.add("alert");
+                    el.classList.add("alert-success");
+                    el.classList.add("mt-5");
+                    el.insertAdjacentHTML('afterbegin', content);
+                    setTimeout(function () {
+                        window.location.replace("../vues/contacts.php");
+                    }, 2000)
                     console.log(data);
 
                 })
-            }
-            else {
+            } else {
                 reponse.json().then((data) => {
+                    content = "<div class='text-center divCentrale'>Erreur lors de l'ajout <br> La page va se rafraîchir automatiquement </div>"
+                    // Insertion du HTML
+                    el.classList.add("alert");
+                    el.classList.add("alert-danger");
+                    el.classList.add("mt-5");
+                    el.insertAdjacentHTML('afterbegin', content);
+                    setTimeout(function () {
+                        window.location.replace("../vues/contacts.php");
+                    }, 2000)
                     console.log(data);
-
                 })
             }
-
         })
         .catch((e) => {
             console.log(e)

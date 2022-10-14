@@ -1,7 +1,8 @@
 <?php
 require_once "../vues/navbar.php";
 ?>
-<div id="content" class="d-flex justify-content-center mt-6"></div>
+
+<div id="content" class="d-flex justify-content-center" style="height: 9rem;"></div>
 
 <script>
     var el = document.getElementById('content');
@@ -11,7 +12,6 @@ require_once "../vues/navbar.php";
     const urlParams = new URLSearchParams(queryString);
     var id = urlParams.get('idContact')
 
-    const API_KEY = "keyUy6gh4qzzh4OLo";
     const URL = `https://api.airtable.com/v0/appaIyKt419Or5Axf/Contacts/${id}?api_key=${API_KEY}`;
 
     const header = {
@@ -25,17 +25,26 @@ require_once "../vues/navbar.php";
         .then((reponse) => {
             // Tout s'est bien passé
             if (reponse.ok) {
-                content = "<div class='text-center divCentrale'> Contact supprimé <br> Vous allez être automatiquement redirigé </div>"
+                content = "<div class='text-center divCentrale'>Contact supprimé <br> Vous allez être automatiquement redirigé </div>"
                 // Insertion du HTML
+                el.classList.add("alert");
+                el.classList.add("alert-success");
+                el.classList.add("mt-5");
                 el.insertAdjacentHTML('afterbegin', content);
-                setTimeout(function(){window.location.replace("../vues/contacts.php");},3000)
+                setTimeout(function() {
+                    window.location.replace("../vues/contacts.php");
+                }, 2000)
             } else {
-                content = "<div class='text-center divCentrale'> Erreur lors de la suppression <br> Vous allez être automatiquement redirigé </div>"
+                content = "<div class='text-center divCentrale'> <span class='bleu'>Erreur lors de la suppression</span> <br> Vous allez être automatiquement redirigé </div>"
                 // Insertion du HTML
+                el.classList.add("alert");
+                el.classList.add("alert-danger");
+                el.classList.add("mt-5");
                 el.insertAdjacentHTML('afterbegin', content);
-                setTimeout(function(){window.location.replace("../vues/contacts.php");},3000)
+                setTimeout(function() {
+                    window.location.replace("../vues/contacts.php");
+                }, 2000)
             }
-
         })
         .catch((e) => {
             console.log(e)

@@ -8,6 +8,9 @@ $objetPlateforme = new Plateforme();
 $listeInfosPlate = $objetPlateforme->listePlateformes();
 ?>
 <div class="container w-80 px-5">
+
+    <div id="content" class="d-flex justify-content-center"></div>
+
     <h1 class="titrePerso35 my-4">Ajouter un contact :</h1>
 
     <div class="accordion accordion-flush" id="accordionFlushContact">
@@ -85,6 +88,4 @@ $listeInfosPlate = $objetPlateforme->listePlateformes();
             ?>
         </div>
 
-        <script src="../script/ajoutContact.js">
-
-        </script>
+        <script src="../script/ajoutContact.js"></script>

@@ -5,12 +5,12 @@
         $instance = new Jeux($_GET['j']);
 ?>
         <div class = 'containerr'>
-            <section>
+            <section class="justify-content-center">
                 <div class="game_card">
 
                     <div class = "game_card_left">
                         <div class="title">
-                            <h1><?= $instance->getNom();?></h1>
+                            <h1 class="titreJeu mt-2 mb-4"><?= $instance->getNom();?></h1>
                         </div>
 
                         <div class="game_img" alt="" style= 
@@ -21,7 +21,7 @@
 
                         <div class="game_card_right">
 
-                        <div class="date_obt">
+                        <div class="date_obt mt-2 mb-4">
                             <p>Obtenu le : <?= $instance->getDate();?></p>
                         </div>
                             <div class="game_desc"><p><?= $instance->getDescription();?></p></div>
@@ -30,21 +30,21 @@
                                     <div class="roww">
                                         <br>
                                         <p>Jouable sur 
-                                            <?php foreach($instance->getPlateform() as $Plateform){ echo $Plateform. " , ";} ?>
+                                            <?php foreach($instance->getPlateform() as $Plateform){ echo $Plateform. ", ";} ?>
                                         </p>
                                     </div>
 
                                     <div class="roww">
                                         <br>
                                         <p>Catégorie :
-                                            <?php foreach($instance->getCategorie() as $categorie){ echo $categorie. " , ";} ?>
+                                            <?php foreach($instance->getCategorie() as $categorie){ echo $categorie. ", ";} ?>
                                         </p>
                                     </div>
 
                                     <div class="roww">
                                         <br>
                                         <p>Langue disponible :
-                                            <?php foreach($instance->getcodeLangue() as $code){ echo $code. " , ";} ?>
+                                            <?php foreach($instance->getcodeLangue() as $code){ echo $code. ", ";} ?>
                                         </p>
                                     </div>
 

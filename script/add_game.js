@@ -46,6 +46,7 @@ function addGame() {
                 response.json().then((data) => {
                     console.log(data);
                 })
+
                 SweetSuccess()
 
                 let body = document.body

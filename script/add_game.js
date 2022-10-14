@@ -4,8 +4,6 @@ function addGame() {
     let desc = document.getElementById('i_desc').value
     const catSelected = document.querySelectorAll('#i_cat option:checked');
     const cat = Array.from(catSelected).map(el => el.value);
-    console.log(catSelected);
-    console.log(cat);
     const platSelected = document.querySelectorAll('#i_plat option:checked');
     const plat = Array.from(platSelected).map(el => el.value);
     let pegi = document.getElementById('i_pegi').value

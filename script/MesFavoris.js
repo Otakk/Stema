@@ -2,17 +2,13 @@
 const API_KEY = "keySqIcm7Sp1udIz1";
 
 function addFav(value, array){
-    console.log(value);
     const id = value.getAttribute("data-g");
-    console.log(array)
     const test = array.findIndex(element => element == 'recN6D1cUxEJIpNbX');
-    console.log("test ",test);
     if(test == -1){
         array.push('recN6D1cUxEJIpNbX');
     }else{
         array.splice(test,1);
     }
-    console.log(array);
     const URL = `https://api.airtable.com/v0/appaIyKt419Or5Axf/Jeux?api_key=${API_KEY}`
     const data = {
         'records' : [{
@@ -29,7 +25,6 @@ function addFav(value, array){
     }
     fetch(URL, header)
     .then((response) => {
-        console.log(response);
         if(response.ok){
             response.json().then((data) =>{
                 console.log(data);

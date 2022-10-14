@@ -131,7 +131,7 @@ h3 {
   height: 60px;
   width: 200px;
   border-radius: 50px;
-  background: linear-gradient(260deg, #bb4747, #8b4848);
+  background: linear-gradient(265deg, #e97a30,#e73827 );
   border: 2px solid #262626;
   text-decoration: none;
 }
@@ -402,6 +402,22 @@ h3 {
   width: 40px;
 }
 
+.icon_plat {
+  background: url(..//images/icon_plat.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 33px;
+  width: 49px;
+}
+
+.icon_pegi {
+  background: url(..//images/icon_pegi.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
 .label_input > label {
   font-size: 20px;
 }
@@ -429,7 +445,7 @@ h3 {
   border: none;
 }
 
-#i_cat {
+#i_cat, #i_plat, #i_pegi {
   background-color: transparent;
   border: 2px solid #f5f5f5;
 }
@@ -478,6 +494,22 @@ h3 {
   top: 0;
   border-radius: 0 15px 0 15px;
   color: #fff;
+}
+
+#i_cat > option, #i_plat > option, #i_pegi > option  {
+  color: #262626;
+}
+
+#img {
+  padding-left: 15px;
+}
+
+#img > .label_input {
+  width: 100%;
+}
+
+#i_img{
+  border: none;
 }
 
 /* ---------------- PAGE ACCUEIL ---------------- */

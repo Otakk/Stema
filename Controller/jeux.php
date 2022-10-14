@@ -222,6 +222,7 @@ class Jeux extends Main{
             <?php
         }
     }
+
     public function getNom()
     {
         return $this-> nom;

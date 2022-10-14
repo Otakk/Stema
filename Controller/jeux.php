@@ -39,7 +39,7 @@ class Jeux extends Main{
             }else{
                 $this-> categorie = ['unknown'];
             }
-            if(!empty($array->{'fields'}->{'PEDI'}))
+            if(!empty($array->{'fields'}->{'PEGI'}))
             {
                 $this-> pegi = $array->{'fields'}->{'PEGI'};
             }else{
@@ -69,7 +69,7 @@ class Jeux extends Main{
                 $this-> img = 'unknown';
             }
             if(!empty($array->{'fields'}->{'Contacts'})){
-                $this-> contacts = $array->{'fields'}->{'Contacts'};
+                $this-> contacts = $array->{'fields'}->{'Name (from Contacts)'};
             }else{
                 $this-> contacts = ['unknown'];
             }
@@ -222,6 +222,7 @@ class Jeux extends Main{
             <?php
         }
     }
+
     public function getNom()
     {
         return $this-> nom;

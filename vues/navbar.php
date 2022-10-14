@@ -27,6 +27,9 @@ $listeCategories = $objetCategorie->listeCategories();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://kit.fontawesome.com/6200c1620f.js" crossorigin="anonymous"></script>
 
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
     <!-- Local style -->
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/listeCategorie.css">

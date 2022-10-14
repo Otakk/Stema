@@ -128,8 +128,8 @@
                                         </select>
                                     </div>
                                 </div>
-<!-- 
-                                <div id="img">
+
+                                <!-- <div id="img">
 
                                     <div class="label_input">
                                         <label for="i_img">Ajouter une image</label>

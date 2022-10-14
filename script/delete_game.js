@@ -20,13 +20,13 @@ function deleteGame(id){
                 // Insertion du HTML
                 el.classList.add("mt-5");
                 el.insertAdjacentHTML('afterbegin', content);
-                setTimeout(function(){window.location.replace("../vues/jeux.tpl.php");},3000)
+                setTimeout(function(){window.location.replace("../vues/jeux.tpl.php");},2000)
             } else {
                 content = "<div class='text-center divCentrale alert alert-danger' role='alert'> Erreur lors de la suppression <br> Vous allez être automatiquement redirigé </div>"
                 // Insertion du HTML
                 el.classList.add("mt-5");
                 el.insertAdjacentHTML('afterbegin', content);
-                setTimeout(function(){window.location.replace("../vues/jeux.tpl.php");},3000)
+                setTimeout(function(){window.location.replace("../vues/jeux.tpl.php");},2000)
             }
 
         })

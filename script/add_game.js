@@ -25,7 +25,7 @@ function addGame() {
                         'Categorie': cat,
                         'Plateforme': plat,
                         'PEGI': parseInt(pegi, 10),
-                        // 'img' : img,
+                        'img' : '../images/defaut.png',
                     }
                 }
             ]
@@ -38,22 +38,35 @@ function addGame() {
         }
 
         fetch(URL, header)
-            .then((response) => {
+        .then((response) => {
+            
+            if(response.ok){
+                // On a une réponse
+                // ON récupère les données
+                response.json().then((data) => {
+                    console.log(data);
+                })
+                SweetSuccess()
 
-                if (response.ok) {
-                    // On a une réponse
-                    // ON récupère les données
-                    response.json().then((data) => {
-                        console.log(data);
-                    })
-                }
-                else {
-                    console.log(response);
-                    $error = true
-                }
-            })
-            .catch((e) => {
-                console.log(e);
-            })
+                let body = document.body
+                let openModal = document.querySelector('#add_modal')
+                let background_blur = document.querySelector('#background_blur')
+                openModal.classList.remove('active');
+                background_blur.classList.remove('active');
+                body.style = 'overflow : initial'
+
+                setTimeout(function(){window.location.replace("../vues/jeux.tpl.php");},2000)
+            }
+            else{
+                console.log(response);
+                SweetError()
+            }
+        })
+        .catch((e) => {
+            console.log(e);
+        })
+
+    } else {
+        SweetError()
     }
 }

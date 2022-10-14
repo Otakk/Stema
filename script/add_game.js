@@ -42,6 +42,7 @@ function addGame() {
                 response.json().then((data) => {
                     console.log(data);
                 })
+
                 SweetSuccess()
 
                 let body = document.body
@@ -50,6 +51,8 @@ function addGame() {
                 openModal.classList.remove('active');
                 background_blur.classList.remove('active');
                 body.style = 'overflow : initial'
+
+                setTimeout(function(){window.location.replace("../vues/jeux.tpl.php");},2500)
             }
             else{
                 console.log(response);

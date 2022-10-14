@@ -227,15 +227,8 @@ h3 {
   transition: 0.2s ease;
 }
 
-<<<<<<< HEAD
-section{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-=======
 .jeu_img {
   border-radius: 18px 18px 0 0;
->>>>>>> 4012e4e6ec74d9742de67cdc2142f8f00156bdba
 }
 
 .cat_title {

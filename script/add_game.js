@@ -21,7 +21,7 @@ function addGame() {
                         'Categorie' : [cat],
                         'Plateforme' : [plat],
                         'PEGI' : parseInt(pegi, 10),    
-                        // 'img' : img,
+                        'img' : '../images/defaut.png',
                     }
                 }
             ]
@@ -42,14 +42,25 @@ function addGame() {
                 response.json().then((data) => {
                     console.log(data);
                 })
+                SweetSuccess()
+
+                let body = document.body
+                let openModal = document.querySelector('#add_modal')
+                let background_blur = document.querySelector('#background_blur')
+                openModal.classList.remove('active');
+                background_blur.classList.remove('active');
+                body.style = 'overflow : initial'
             }
             else{
                 console.log(response);
-                $error = true
+                SweetError()
             }
         })
         .catch((e) => {
             console.log(e);
         })
+
+    } else {
+        SweetError()
     }
 }

@@ -64,23 +64,6 @@ $listeCategories = $objetCategorie->listeCategories();
                 <!-- align-items-sm-start -->
                 <div class="sidebar text-white min-vh-100">
 
-<<<<<<< HEAD
-                    <div class="accordion accordion-flush py-4" id="accordionFlushExample">
-                        <div class="accordion-item bg-dark">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button bg-dark h2Perso text-white px-0 py-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    <a href="listeCategories.php" class="text-decoration-none h2Perso redHover"><span class="h2Perso ms-1">Catégories</span></a>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body py-0">
-                                    <?php
-                                    $listeCategorie = $objetCategorie->listeCategories();
-                                    foreach ($listeCategories->{'records'} as $categorie) {
-                                    ?>
-                                        <li class="w-100">
-                                            <a href="jeux.tpl.php?nom=<?= $categorie->{'fields'}->{'Name'}; ?>" class="nav-link subitem px-0"> <span><?= $categorie->{'fields'}->{'Name'}; ?></span></a>
-=======
                     <a href="index.php" class="divLogo text-white text-decoration-none">
                         <img src="../images/logo50x50.png" class="logo40x40" alt="">
                         <span class="titrePerso25">STEMA</span>
@@ -105,7 +88,6 @@ $listeCategories = $objetCategorie->listeCategories();
                                     <ul class="accordion-body pt-0" id="accordionBody">
                                         <li class="w-100 greyHover">
                                             <a href="listeCategories.tpl.php" class="nav-link subitem px-0">Voir tous</a>
->>>>>>> 4012e4e6ec74d9742de67cdc2142f8f00156bdba
                                         </li>
                                         <?php
                                         $listeCategorie = $objetCategorie->listeCategories();
@@ -120,20 +102,6 @@ $listeCategories = $objetCategorie->listeCategories();
                                     </ul>
                                 </div>
                             </div>
-<<<<<<< HEAD
-                        </div>
-                    </div>
-                    <li>
-                        <a href="#" class="nav-link px-0 align-middle redHover">
-                            <span class="h2Perso ms-1">Contacts</span></a>
-                    </li>
-                </ul>
-                <hr>
-            </div>
-        </div>
-        <div class="col py-3">
-
-=======
                         </li>
                         <li class="nav-item">
                             <a href="contacts.php" class="nav-link px-0 align-middle redHover">
@@ -142,4 +110,3 @@ $listeCategories = $objetCategorie->listeCategories();
                     </ul>
                 </div>
             </div>
->>>>>>> 4012e4e6ec74d9742de67cdc2142f8f00156bdba

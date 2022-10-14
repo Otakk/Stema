@@ -61,7 +61,7 @@ $listeCategories = $objetCategorie->listeCategories();
         <div class="row flex-nowrap altmain">
             <div id="navbar" class="col-auto col-md-3 col-xl-2 px-0 pt-2 bg-dark">
                 <!-- align-items-sm-start -->
-                <div class="sidebar text-white min-vh-100">
+                <div class="sidebar text-white">
 
                     <a href="index.php" class="divLogo text-white text-decoration-none">
                         <img src="../images/logo50x50.png" class="logo40x40" alt="">

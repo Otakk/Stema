@@ -6,7 +6,7 @@ $array = $ListeCategorie->listeCategories();
 
 <div class = 'containerr'>
 
-<h1>Mes jeux</h1>
+<h1>Categories</h1>
 
 <section>
         <?php
